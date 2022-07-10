@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:ital,wght@0,500;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  --heading: rgb(0, 20, 45);
+  --para: #777;
+  --para-tint: #e4e4e4;
+  --white: #fff;
+  --black: #212529;
+  --helper: #8490ff;
+  --helper-tint: rgb(243, 244, 255);
+  --bg: rgb(249, 249, 250);
+  --gradient: linear-gradient(
+    0deg,
+    rgb(132, 128, 215) 0%,
+    rgb(105, 233, 245) 100%
+  );
+  --gradient-support: -webkit-linear-gradient(
+    0deg,
+    rgb(132, 128, 215) 0%,
+    rgb(105, 233, 245) 100%
+  );
+  --shadow: 0px 0px 20px 0px rgb(132 144 255/20%);
+  --shadow-support: 0px 20px 20px 0px rgb(132 144 255/20%);
+  --transition: all 300ms linear;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--heading);
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--para);
+}
+
+/* ==================HEADER SECTION================== */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+  height: 10rem;
+  padding: 0 4.8rem;
+}
+
+.header .logo {
+  height: 10rem;
+}
+
+.navbar_list {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.navbar_link,
+.navbar_link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--black);
+  transition: var(--transition);
+}
+.navbar_link:hover,
+.navbar_link:active {
+  color: var(--helper);
+}
+
+/* ==================REUSABLE CODE================== */
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9rem;
+}
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section {
+  padding: 8rem 0;
+}
+
+.btn {
+  background: var(--gradient-support);
+  padding: 1.6rem 3.2rem;
+  border: none;
+  color: var(--helper-tint);
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 5px 30px;
+}
+
+.btn:hover,
+.btn:active {
+  box-shadow: var(--shadow-support);
+}
+
+.section_heading{
+    font-size: 4.4rem;
+    font-size: 700;
+    position: relative;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+}
+.section_heading::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--helper);
+    border-radius: 50% 0;
+    transform:rotate(45deg);
+}
+.section_heading::after{
+    content: "";
+    position: absolute;
+    top:118%;
+    left: 1.5rem;
+    min-width: 25rem;
+    height: .3rem;
+    background: var(--helper);
+
+}
+/* ==================HERO SECTION================== */
+
+.hero_section {
+  background: var(--bg);
+}
+
+.hero_section_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.data_top_para {
+  text-transform: uppercase;
+  color: var(--heading);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--helper);
+}
+
+.data_heading{
+    font-weight: 700;
+    font-size: 6.4rem;
+}
+
+.data_para{
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+}
+
+.hero_section_img {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.hero_img {
+  width: 80%;
+  border: 5px solid;
+  border-image: linear-gradient(rgb(132, 128, 215),
+  rgb(105, 233, 245))1;
+  animation: image 2.5s ease-in infinite;
+}
+
+@keyframes image{
+    50%{
+        border-image: linear-gradient(360deg ,rgb(132, 128, 215),
+        rgb(105, 233, 245))1;
+    }
+}
+
+
+/* ==================BIO-DATA SECTION================== */
+
+.bio_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bio_img img{
+    width: 80%;
+    box-shadow: -2rem -2rem 0 0 var(--helper);
+}
+
+.data_stats h3{
+    margin-bottom: 1rem;
+}
+
+.bio_data_stats{
+    display: flex;
+    flex-direction: column;
+    padding: 4.5rem 0;
+    gap: 3rem;
+}
+
+.bio_progress{
+    position: relative;
+    height: .8rem;
+    background: var(--para-tint);
+    border-radius: 10rem;
+    box-shadow: var(--shadow);
+}
+.bio_progress::before{
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: 80%;
+    top: 0;
+    left: 0;
+    background: var(--gradient-support);
+    border-radius: 10rem;
+}
+.bio_progress-2::before{
+    width: 90%;
+}
+.bio_progress-3::before{
+    width: 70%;
+}
+.bio_progress-4::before{
+    width: 75%;
+}
+.bio_progress-5::before{
+    width: 65%;
+}
+
+
+.bio_progress span{
+    background: var(--helper);
+    color: var(--white);
+    width: 4rem;
+    height: 2rem;
+    top: 1.8rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: 0;
+    left: 76%;
+    border-radius: 5px;
+}
+.bio_progress-2 span{
+    left: 86%;
+}
+.bio_progress-3 span{
+    left: 66%;
+}
+.bio_progress-4 span{
+    left: 71%;
+}
+.bio_progress-5 span{
+    left: 61%;
+}
+
+.bio_progress span::after{
+    content: "";
+    position: absolute;
+    top: -1.6rem;
+    border: .8rem solid var(--helper);
+    border-color: transparent;
+    border-bottom-color: var(--helper);
+
+}
+
+/* ==================HEADER SECTION================== */
+/* ==================HEADER SECTION================== */
