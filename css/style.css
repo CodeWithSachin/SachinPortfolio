@@ -528,7 +528,7 @@ p {
   gap: 3.2rem;
 }
 
-.testimonial_client_msg p::before{
+.testimonial_client_msg p::before {
   content: "\f10d";
   position: absolute;
   top: 0;
@@ -538,7 +538,7 @@ p {
   font-weight: 900;
   color: #ced3ff;
 }
-.testimonial_client_msg p::after{
+.testimonial_client_msg p::after {
   content: "\f10e";
   position: absolute;
   bottom: 0;
@@ -556,10 +556,9 @@ p {
   border: 0.5rem solid var(--helper-tint);
 }
 
-
 /* ==================TESTIMONIAL SECTION================== */
 
-.freelance_section{
+.freelance_section {
   background-image: url("../Assets/freelance.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -569,7 +568,7 @@ p {
   text-align: center;
 }
 
-.freelance_section .overlay{
+.freelance_section .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -579,55 +578,122 @@ p {
   opacity: 0.5;
 }
 
-.freelance_section .container{
+.freelance_section .container {
   position: relative;
 }
 
-.freelance_section h2{
+.freelance_section h2 {
   font-size: 5rem;
 }
 
-.freelance_section span{
+.freelance_section span {
   color: #a0f669;
 }
 
-.freelance_section h2, .freelance_section p{
+.freelance_section h2,
+.freelance_section p {
   color: var(--white);
   margin-bottom: 1.8rem;
 }
 
-
 /* ==================TESTIMONIAL SECTION================== */
 
-.contact_main{
+.contact_main {
   max-width: 70rem;
   margin: 0 auto;
   margin-top: 9rem;
-  transition: all 300ms linear ;
+  transition: all 300ms linear;
 }
-.contact_main form{
+.contact_main .grid {
+  gap: 3rem;
+}
+.contact_main form {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
 
-.contact_main input, .contact_main textarea{
+.contact_main input,
+.contact_main textarea {
   padding: 1.5rem 2rem;
-  border: .1rem solid #c9c9c9;
-  border-radius: .5rem;
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 0.5rem;
   font-size: 1.6rem;
   font-family: "work sans";
   width: 100%;
 }
 
-.contact_main input:focus, .contact_main input:active,.contact_main textarea:focus, .contact_main textarea:active{
-  border: .1rem solid #c9c9c9;
-  border-radius: .5rem;
+.contact_main input:focus,
+.contact_main input:active,
+.contact_main textarea:focus,
+.contact_main textarea:active {
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 0.5rem;
   outline: none;
 }
 
-.contact_main input[type="submit"]{
+.contact_main input[type="submit"] {
   width: 30%;
   border: none;
   border-radius: 5px 30px;
+}
+
+/* ==================== Footer ======================= */
+
+.footer_section {
+  background: var(--heading);
+  transition: all 700ms linear;
+}
+.footer_section i {
+  padding-right: .5rem;
+}
+.footer_section h3 {
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+
+.footer_about p{
+  color: #adadad;
+}
+
+.footer_links ul, .footer_services ul, .footer_address address{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.footer_links a, .footer_services a,.footer_links li, .footer_services li, .footer_address a{
+  color: #adadad;
+  font-size:  1.5rem;
+  text-transform: capitalize;
+}
+
+.footer_socials{
+  margin: 5rem 0;
+  text-align: center;
+  /* gap: 1rem; */
+  color: #adadad;
+}
+
+.footer_socials i{
+  /* width: 4rem; */
+  /* height: 4rem; */
+  font-size: 3rem;
+  margin: 0 1rem;
+  background: var(--icon-bg);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  color: var(--white);
+  animation: wave 3s linear infinite;
+}
+
+.footer_copyright p{
+  text-align: center;
+  color: #adadad;
+}
+
+.footer_section a:hover, .footer_section a:active{
+  color: var(--white);
 }
