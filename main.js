@@ -34,3 +34,46 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
+  // Scroll to top
+
+const headerElement = document.querySelector(".hero_section")
+
+const footerElement = document.querySelector(".footer_section");
+
+const scrollElement = document.createElement("div");
+
+scrollElement.classList.add("scrollTop");
+
+scrollElement.innerHTML = `<i class="fas fa-arrow-alt-up scrollTop_icon"></i>`;
+
+footerElement.after(scrollElement);
+
+const scrollTop = () => {
+  headerElement.scrollIntoView({behavior:"smooth"})
+}
+
+scrollElement.addEventListener("click", scrollTop)
+
+
+
+const counterNum = document.querySelectorAll(".counter_number");
+
+const speed = 200;
+
+counterNum.forEach((currEle)=>{
+  const updateNum= () => {
+    const targetNum =  parseInt(currEle.dataset.number);
+    console.log(targetNum);
+    const initialNum = parseInt(currEle.innerText);
+    console.log(initialNum);
+    const incrementNum = Math.trunc(targetNum/speed);
+
+    if(initialNum < targetNum){
+      currEle.innerText = `${initialNum+incrementNum}+`;
+
+      setTimeout(updateNum, 5);
+    }
+  }
+  updateNum();
+})

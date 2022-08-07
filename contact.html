@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="/Assets/logo/logo_transparent.png" alt="Logo" class="logo">
+        <nav class="navbar">
+            <ul class="navbar_list">
+                <li><a href="./index.html" class="navbar_link home_link">Home</a></li>
+                <li><a href="./about.html" class="navbar_link about_link">About</a></li>
+                <li><a href="./service.html" class="navbar_link service_link">Service</a></li>
+                <li><a href="./index.html#Portfolio" class="navbar_link portfolio_link">Portfolio</a></li>
+                <li><a href="./contact.html" class="navbar_link contact_link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section contact_section" id="Contact">
+        <div class="container">
+            <h2 class="section_heading">Contact Us</h2>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.7457556762495!2d72.81198242919743!3d19.413139499180968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a95a650ef471%3A0xe6e492ac8487e98!2sBhagyoday%20Cooperative%20Housing%20Society!5e0!3m2!1sen!2sin!4v1659840990730!5m2!1sen!2sin"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact_main contact_container">
+            <form action="#">
+                <div class="grid grid-two-column">
+                    <div>
+                        <label for="username"></label>
+                        <input type="text" name="username" id="username" placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div>
+                    <label for="subejct"></label>
+                    <input type="text" name="subject" placeholder="subject" id="subject">
+                </div>
+                <div>
+                    <label for="messege"></label>
+                    <textarea name="messege" id="messege" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer_section section">
+        <div class="container grid grid-four-column">
+            <div class="footer_about">
+                <h3>About</h3>
+                <p>Hello! My name is Sachin Singh, and I'm a web developer. I have diverse skills in HTML, CSS,
+                    JavaScript, Angular, Typescript, NodeJs, MongoDB, and many more.</p>
+            </div>
+            <div class="footer_links">
+                <h3>Links</h3>
+                <ul>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">Home</a></li>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">About</a></li>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">Service</a></li>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">Portfolio</a></li>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_services">
+                <h3>Services</h3>
+                <ul>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">Web Design</a></li>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">Front-End Development</a></li>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">Back-End Development</a></li>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">Full-Stack Development</a></li>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">UI/UX Development</a></li>
+                    <li><i class="fas fa-arrow-alt-right"></i><a href="#">Photography</a></li>
+                </ul>
+            </div>
+            <div class="footer_address">
+                <h3>Have a Question?</h3>
+                <address>
+                    <div>
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                    </div>
+                    <div>
+                        <p><i class="fas fa-phone-alt"></i><a href="tel:+917517348202">+91 7517348202</a></p>
+                    </div>
+                    <div>
+                        <p><i class="fas fa-envelope"></i><a
+                                href="mailto:info@codewithsachin.in">info@codewithsachin.in</a></p>
+                    </div>
+                </address>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer_socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer_copyright">
+                <p>Copyright ©️2022 All Right Reserved | This is Made with ❤️ by CodeWithSachin</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

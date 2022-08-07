@@ -27,6 +27,7 @@
     rgb(132, 128, 215) 0%,
     rgb(105, 233, 245) 100%
   );
+  --border-gradient:linear-gradient(rgb(132, 128, 215), rgb(105, 233, 245)) 1;
   --shadow: 0px 0px 20px 0px rgb(132 144 255/20%);
   --shadow-support: 0px 20px 20px 0px rgb(132 144 255/20%);
   --transition: all 300ms linear;
@@ -213,10 +214,10 @@ p {
 }
 .hero_img {
   width: 80%;
-  border-radius: 50px 5px;
-  border: 5px solid;
-  border-image: linear-gradient(rgb(132, 128, 215), rgb(105, 233, 245)) 1;
-  animation: image 2.5s ease-in infinite;
+  border: 5px solid var(--helper);
+  /* border-image: ; */
+  /* animation: image 2.5s ease-in infinite; */
+  animation: wave 2s linear infinite;
 }
 
 @keyframes image {
@@ -465,7 +466,7 @@ p {
     border-radius: 42% 58% 65% 35% / 59% 47% 53% 41%;
   }
   50% {
-    border-radius: 3% 98% 15% 89% / 72% 0% 93% 28%;
+    border-radius: 3% 67% 15% 71% / 72% 0% 72% 28%;
   }
   100% {
     border-radius: 42% 58% 65% 35% / 59% 47% 53% 41%;
@@ -696,4 +697,24 @@ p {
 
 .footer_section a:hover, .footer_section a:active{
   color: var(--white);
+}
+
+
+.scrollTop{
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  z-index: 1;
+}
+
+.scrollTop_icon{
+  font-size: 3rem;
+  margin: 0 1rem;
+  background: var(--helper);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  color: var(--white);
+  animation: wave 3s linear infinite;
+  /* border: 1px solid var(--white); */
 }
