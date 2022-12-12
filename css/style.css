@@ -104,6 +104,13 @@ p {
   color: var(--helper);
 }
 
+.mobile-navbar-btn{
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
 /* ==================REUSABLE CODE================== */
 
 .container {
@@ -716,5 +723,10 @@ p {
   position: relative;
   color: var(--white);
   animation: wave 3s linear infinite;
-  /* border: 1px solid var(--white); */
+  border: 1px solid var(--white);
 }
+
+
+
+/* ==================== Media Query ======================= */
+
