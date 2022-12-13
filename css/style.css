@@ -111,6 +111,10 @@ p {
   border: none;
 }
 
+i[name="close"]{
+  display: none;
+}
+
 /* ==================REUSABLE CODE================== */
 
 .container {
@@ -730,3 +734,22 @@ p {
 
 /* ==================== Media Query ======================= */
 
+@media (max-width: 980px){
+  .header{
+    position: relative
+  }
+
+  .mobile-navbar-btn{
+    display: block;
+    z-index: 9999;
+    border: 3px solid var(--black);
+    color: var(--black);
+  }
+
+  .mobile-navbar-icon{
+    font-size: 5rem;
+    color: var(--black);
+  }
+
+  
+}
