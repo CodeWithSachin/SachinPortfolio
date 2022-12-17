@@ -77,3 +77,13 @@ counterNum.forEach((currEle)=>{
   }
   updateNum();
 })
+
+
+// responsive navbar component
+
+const mobile_nav = document.querySelector(".mobile-navbar-btn")
+const headerEle = document.querySelector(".header")
+
+mobile_nav.addEventListener('click', ()=>{
+  headerEle.classList.toggle('active')
+})
