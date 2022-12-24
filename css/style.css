@@ -115,6 +115,20 @@ p {
   display: none;
 }
 
+.sticky .header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index: 9999;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.sticky .hero_section{
+  margin-top: 10rem;
+}
+
 /* ==================REUSABLE CODE================== */
 
 .container {
@@ -137,7 +151,7 @@ p {
 }
 
 .section {
-  padding: 8rem 0;
+  padding: 10rem 0;
 }
 
 .btn {
